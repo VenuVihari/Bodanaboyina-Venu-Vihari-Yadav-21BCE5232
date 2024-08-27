@@ -63,7 +63,6 @@ wss.on('connection', (ws) => {
                 const moveResult = game.processMove(data.move);
                 console.log("Move result:", moveResult);
                 if (moveResult.valid) {
-                    // Broadcast the updated game state, including move history
                     broadcast({ type: 'update', state: game.getState() });
                     if (moveResult.winner) {
                         broadcast({ type: 'gameOver', winner: moveResult.winner });
