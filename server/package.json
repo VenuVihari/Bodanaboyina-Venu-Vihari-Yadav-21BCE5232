@@ -1,0 +1,12 @@
+{
+  "name": "turn-based-game",
+  "version": "1.0.0",
+  "description": "A turn-based game using WebSockets",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "ws": "^8.8.0"
+  }
+}
